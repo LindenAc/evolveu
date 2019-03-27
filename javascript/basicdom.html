@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>comp 107</title>
+</head>
+<body id="onBodyClick">
+	<h1 id='idH1'>Hello World</h1>
+	<h2 id='idH2'>Hello Canada</h2>
+	<h3>Hello Alberta</h3>
+	<h4>Calgary</h4>
+	<input type="text" name="">
+	<button id='onPushBut'>Push Me</button>
+	<div>I am a div</div>
+	<br>
+
+	<script>
+		// document.write('hello from basicdom.js');  //print document
+		let onPushBut = document.getElementById('onPushBut');
+		let idH1Press = document.getElementById('idH1');
+		let onBodyClick = document.getElementById('onBodyClick');
+
+			//not sure where to place this set of text
+			// i can add this to specific buttons
+		var h2 = document.getElementsByTagName("H2")[0];
+		var place = document.createAttribute("place");
+		place.value = "Canada";
+		h2.setAttributeNode(place);
+
+		idH1Press.addEventListener('click', onPush);
+		onPushBut.addEventListener('click', addElement);
+
+			// how do i get the same by just clicking the h2 element?
+		onBodyClick.addEventListener('click', function(event) {
+			if (event.target === h2) {
+				h2.getAttribute(place.value);
+				alert(place.value);
+			}	else {
+				console.log(event.target);
+			}	
+		})
+
+		function onPush() {
+			let x = document.getElementById('idH1').textContent;
+			if (x === 'Hello World') {
+				let y = idH1.textContent = 'Hello Universe';
+			} else {
+				let z = idH1.textContent = 'Hello World';
+			}
+		}
+
+		let count = 0;
+		function addElement() {
+		    var elemDiv = document.createElement('h' + count++);
+		    // elemDiv.style.cssText = 'width:100%;height:10%;background:rgb(192,192,192);';
+		    elemDiv.textContent = 'This is H' + count; 
+		    window.document.body.insertBefore(elemDiv, window.document.body.firstChild);
+   			document.body.appendChild(elemDiv); // appends last of that element
+}
+			
+	</script>
+</body>
+</html>

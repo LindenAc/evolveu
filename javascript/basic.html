@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comp 100 Work</title>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+</head>
+<body>
+	<div class="Hello">
+	<h1>Hello World from HTML</h1>
+		<input type="text" id="result" placeholder="Enter a Number">
+		<button class='wine' onclick="onButtonClicked()">Push Me!</button>
+	</div>
+		<script>
+			// document.write("Hello world from inline JavaScript");
+			
+			function onButtonClicked() {
+				let mod = 1;
+				let x = parseInt(document.getElementById("result").value); console.log(x);
+				x += mod;  console.log(x);
+			}
+
+			const button = document.querySelector('button');
+
+			button.addEventListener('click', event => {  	// The button counter
+			  button.innerHTML = `Click count: ${event.detail}`;
+			});
+		</script>	
+
+   	<div class="calculator">
+   	<h2>My Calculator</h2>
+        <input id="num1" placeholder="Enter First Number">
+      	 <input id="num2" placeholder="Enter Second Number"><br>
+       	<button class='wine' type="button" id="butPlus">+</button> 
+        <button class='wine' type="button" id="butMinus">-</button> 
+		<button class='wine' type="button" id="butMult">*</button> 
+     	<button class='wine' type="button" id="butDevide">/</button>
+     	<button class='wine' type="button" id="butClear">C</button><br>
+		 	<input type="text" id="display">
+	 </div>
+
+	<div class="Taxes">
+	 <h3>Canadian Taxes</h3>
+		<p>Enter taxable income</p>
+		<input type="text" id='taxableIncome' placeholder="Enter Taxable Income">
+		<button class='wine' type="button" id='butCalculateTax'>Calculate My Tax!</button>
+		<p>This is your tax payable</p>
+		<input type="test" id='effectiveTax'>
+	</div>
+
+    <div class="Array">
+    <h4>Working with Arrays</h4>
+    	<input class='wine' type="text" id="addNumber" placeholder="Enter Numbers"><br>
+    	<button class='wine' type="button" id="butAdd">Add</button>
+    	<button class='wine' type="button" id="butShow">Show</button>
+    	<button class='wine' type="button" id="butTotal">Total</button>
+    	<button class='wine' type="button" id="butClear2">Clear</button> 
+	</div>
+
+	<div class="Dictionaries">
+	<h5>Working with Dictionaries</h5>
+		<input id="addLookup" placeholder="Enter Province Short Code">
+		<button class='wine' type="button" id="butLookup">Lookup</button>
+	</div>	
+		
+<!-- 	</div> -->
+		<!-- // var a = 12
+		// var b = 2
+
+		// if (number < number2) {
+		// 	console.log(number + " is less than " + number2)
+		// 	} else {
+		// 		console.log (number + " is greater than " + number2)
+		// 	}
+
+		// function testfunction(a, b) {
+		// 	console.log (a + b)
+		// }
+
+
+		// function sayHello(differentLanguage) {
+		// 	console.log(differentLanguage);
+		// }
+
+		// sayHello("ola");
+		// sayHello("hello");
+		// sayHello("hay");
+
+		// function add(a,b) {
+		// 	return a + b
+		// }
+
+		// add(5, 10);
+
+		// search Array Methods @ w3s
+		// var list = ["tiger", "cat", "bear", "bird"];
+		// console.log(list);
+		// list.push("elephant");
+		// list.unshift("lemon");
+
+		// var todos = [
+		// 	"clean room",
+		// 	"brush teeth",
+		// 	"cook",
+		// 	"play"
+		// ];
+
+		// var todosImp = [
+		// 	"clean room!",
+		// 	"brush teeth!",
+		// 	"cook!",
+		// 	"play!"
+		// ];
+
+		// var todosLength = todos.length;
+		// for (var i=0; i < todos.length; i++) {
+		// 	console.log(todos[i] + "!");
+		// }
+
+		//Array
+		// todos.forEach(function(todos, i) {
+		// 	console.log(todos, i);
+		// })
+
+		// //Function
+		// function logTodos(todos, i) {
+		// 	console.log(todos, i);
+		// }
+
+		// todos.forEach(logTodos);
+		// todosImp.forEach(logTodos);
+
+		// // Declare Object
+		// var person = {
+		// 	firstName = "John",
+		// 	LastName = "Doe",
+		// 	age = "40"
+		// };
+		
+
+
+		// var counterOne = 0;
+		// while (counterOne < 10) {
+		// 	console.log(counterOne);
+		// 	counterOne++
+		// }
+
+		// var counterTwo = 10
+		// do {
+		// 	console.log(counterTwo);
+		// 	counterTwo--;
+		// }while (counterTwo > 10); -->
+		
+
+	</script>
+	<script src="basic.js"></script>
+</body>
+</html>
+

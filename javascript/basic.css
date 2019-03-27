@@ -1,0 +1,89 @@
+
+h1, h2, h3, h4, h5 {
+  font-size: 20px;
+  line-height: .2em;
+}
+
+p {
+  word-spacing: 0.1em;
+  line-height: .2em;
+}
+
+.Hello {
+  border: 1px solid #665544;
+  background-color: #efefef;
+  height: 80px;
+  width: 400px;
+  text-align: left;
+}
+
+.calculator {
+  border: 1px solid #665544;
+  background-color: #efefef;
+  height: 125px;
+  width: 400px;
+  text-align: left;
+  margin-top: 5px;
+  }
+
+.Taxes {
+  border: 1px solid #665544;
+  background-color: #efefef;
+  height: 160px;
+  width: 400px;
+  text-align: left;
+  margin-top: 5px;
+  }
+
+.Array {
+  border: 1px solid #665544;
+  background-color: #efefef;
+  height: 140px;
+  width: 400px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+  .Dictionaries {
+  border: 1px solid #665544;
+  background-color: #efefef;
+  height: 130px;
+  width: 400px;
+  text-align: left;
+  vertical-align: text-top;
+  margin-top: 5px;
+}
+
+input {
+  background: lightGray;
+  border-radius: 1px;
+  font-size: 14px;
+}
+
+/*button.wine {
+   display:inline-block;
+   padding:0.2em 1.45em;
+   margin:0.1em;
+   border:0.15em solid #CCCCCC;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-family:'Segoe UI','Roboto',sans-serif;
+   font-weight:400;
+   color:#000000;
+   background-color:#CCCCCC;
+   text-align:center;
+   position:relative;
+  }
+  button.wine:hover{
+   border-color:#7a7a7a;
+  }
+  button.wine:active{
+   background-color:#999999;
+  }
+  @media all and (max-width:30em){
+  button.wine {
+    display:block;
+    margin:0.5em auto;
+   }
+  }
+}*/
