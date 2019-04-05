@@ -13,20 +13,23 @@ const data = {
 	prov: "Alberta"
 };
 
-const newArray=[];
-
-function loopWithmap() {
-	data.staff.map(function(x) {
-		newArray.push(`${x.balance}`);
-			// console.log('in forEach', newArray);
-});
-	return newArray	
+function assertEquals(p1,p2) {
+	if (p1 === p2) {
+		console.log(`OK-> ${p1}`);
+		result = true
+	} else {
+		console.log(`the two values are not the same: 
+			p1--> ${p1} 
+			p2--> ${p2}`); 
+		result = false
+	}
+	return result
 }
 
-const total = function(accumulator, curr) {
-		return parseInt(accumulator) + parseInt(curr);
-}
+let tot = data.staff.reduce(function(a, curr) {
+	return parseInt(a) + parseInt(curr.balance);
+},0);
 
-console.log(loopWithmap());
-console.log(newArray.reduce(total));
+console.log(tot);
 
+assertEquals(tot, 3823);
